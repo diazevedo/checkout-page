@@ -2,7 +2,7 @@
   color: var(--gray-3);
   display: block;
   font-size: var(--text-xs);
-  margin-bottom: 0.5rem;
+  margin: 1rem 0 0.5rem;
 }
 
 .input__text {
@@ -66,11 +66,6 @@
   background-image: url(../../assets/images/postal.svg);
 }
 
-/* it will be moved to parts => form*/
-.input__label:not(:first-child) {
-  margin-top: 1rem;
-}
-
 .input__wrapper_text.-country:after {
   content: "";
   width: 1.8rem;
@@ -103,7 +98,6 @@ option {
 }
 
 .row {
-  margin-top: 1.5rem;
   display: flex;
 }
 
@@ -125,8 +119,7 @@ option {
 }
 
 @media (min-width: 768px) {
-  .input__label,
-  .input__label:not(:first-child) {
+  .input__label {
     font-size: var(--text-sm);
     margin: 1.5rem 0 1rem;
   }
