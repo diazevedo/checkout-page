@@ -1,0 +1,42 @@
+:root {
+  --font-primary: "Montserrat", sans-serif;
+
+  --gray-1: #4e5150;
+  --gray-2: #333333;
+  --gray-3: #4f4f4f;
+  --gray-4: #828282;
+  --gray-5: #f2f2f2;
+  --gray-6: #bdbdbd;
+  --orange-1: #f2994a;
+  --white-1: #ffffff;
+
+  --border-radius-icon: 4px;
+  --border-radius-default: 12px;
+  --border-radius-images: 13px;
+
+  --text-xs: 1rem;
+  --text-sm: 1.2rem;
+
+  --text-md: 1.4rem;
+  --text-mdx: 1.6rem;
+
+  --text-lg: 1.8rem;
+  --text-lgx: 2.4rem;
+
+  --title-xs: 1.2rem;
+  --title-sm: 1.8rem;
+  --title-md: 2.4rem;
+  --title-lg: 3.6rem;
+  --title-lgx: 4.8rem;
+
+  --space-xs: 1.2rem;
+  --space-sm: 2rem;
+  --space-mds: 3.2rem;
+  --space-md: 4.2rem;
+  --space-lg: 4.8rem;
+  --space-lgx: 7.7rem;
+  --space-lxx: 8.6rem;
+
+  --min-width: 37.5rem;
+  --max-width: 128.5rem;
+}
