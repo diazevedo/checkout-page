@@ -1,0 +1,9 @@
+.btn-submit {
+  background-color: var(--orange-1);
+  width: 16.6rem;
+  height: 5.4rem;
+  border-radius: var(--border-radius-default);
+  color: var(--white-1);
+  font-size: var(--text-mdx);
+  font-weight: 600;
+}

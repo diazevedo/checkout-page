@@ -58,13 +58,17 @@
   background-image: url(../../assets/images/location.svg);
 }
 
+.input__wrapper_text.-country:before {
+  background-image: url(../../assets/images/world.svg);
+}
+
 .input__wrapper_text.-post_code:before {
   background-image: url(../../assets/images/postal.svg);
 }
 
 /* it will be moved to parts => form*/
 .input__label:not(:first-child) {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .input__wrapper_text.-country:after {
@@ -118,4 +122,34 @@ option {
 
 .remember_next_time input {
   margin-right: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .input__label,
+  .input__label:not(:first-child) {
+    font-size: var(--text-sm);
+    margin: 1.5rem 0 1rem;
+  }
+
+  .input__wrapper_text {
+    height: 5.6rem;
+    font-size: var(--text-mdx);
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+  }
+
+  .input__wrapper_text:before {
+    width: 2rem;
+    height: 1.8rem;
+  }
+
+  .input__text {
+    padding-left: 3.6rem;
+  }
+
+  .remember_next_time input {
+    width: 2.1rem;
+    height: 2.1rem;
+    margin-right: 1rem;
+  }
 }

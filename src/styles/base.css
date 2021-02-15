@@ -30,15 +30,16 @@ body > * {
 
 a,
 select,
+button,
 input {
   font-size: inherit;
   font-family: inherit;
   text-decoration: none;
-
   outline: none;
 }
 
-a {
+a,
+button {
   cursor: pointer;
 }
 
