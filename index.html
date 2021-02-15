@@ -30,62 +30,104 @@
   <body>
     <main>
       <h1 class="title__one">Checkout</h1>
-      <div class="forms-wrapper">
+      <div class="form-wrapper">
         <form>
-          <fieldset>
-            <legend>Contact information</legend>
-            <label for="email">E-mail</label>
-            <input
-              type="text"
-              name="email"
-              id="email"
-              placeholder="Enter your email..."
-            />
+          <fieldset class="fieldset">
+            <legend class="fieldset__title">Contact information</legend>
 
-            <label for="phone">E-mail</label>
-            <input
-              type="text"
-              name="phone"
-              id="phone"
-              placeholder="Enter your phone..."
-            />
+            <label class="input__label" for="email">E-mail</label>
+            <div class="input__wrapper_text -email">
+              <input
+                class="input__text"
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Enter your email..."
+              />
+            </div>
+
+            <label class="input__label" for="phone">Phone</label>
+            <div class="input__wrapper_text -phone">
+              <input
+                class="input__text"
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="Enter your phone..."
+              />
+            </div>
           </fieldset>
 
-          <fieldset>
-            <legend>Shipping address</legend>
-            <label for="name">Full name</label>
-            <input type="text" name="name" id="name" value="Rodney Cotton" />
+          <fieldset class="fieldset">
+            <legend class="fieldset__title">Shipping address</legend>
 
-            <label for="address">Address</label>
-            <input
-              type="text"
-              name="address"
-              id="address"
-              placeholder="Your address..."
-            />
+            <label for="name" class="input__label">Full name</label>
+            <div class="input__wrapper_text -account">
+              <input
+                class="input__text"
+                type="text"
+                name="name"
+                id="name"
+                value="Rodney Cotton"
+              />
+            </div>
 
-            <label for="city">City</label>
-            <input
-              type="text"
-              name="city"
-              id="city"
-              placeholder="Your city..."
-            />
+            <label class="input__label" for="address">Address</label>
+            <div class="input__wrapper_text -address">
+              <input
+                class="input__text"
+                type="text"
+                name="address"
+                id="address"
+                placeholder="Your address..."
+              />
+            </div>
 
-            <label for="country">E-mail</label>
-            <!-- probably it will become a list  -->
-            <select name="country" id="country">
-              <option value="australia">Australia</option>
-              <option value="brazil">Brazil</option>
-              <option value="usa">United States</option>
-            </select>
+            <label class="input__label" for="city">City</label>
+            <div class="input__wrapper_text -location">
+              <input
+                class="input__text"
+                type="text"
+                name="city"
+                id="city"
+                placeholder="Your city..."
+              />
+            </div>
 
-            <input
-              type="number"
-              name="postcode"
-              placeholder="Your postal code..."
-            />
-            <label>
+            <div class="row">
+              <div class="column">
+                <label class="input__label" for="country">Country</label>
+                <!-- probably it will become a list  -->
+                <div class="input__wrapper_text -location -country">
+                  <select
+                    required
+                    class="input__text -location select"
+                    name="country"
+                    id="country"
+                  >
+                    <option value="" disabled selected>Your country...</option>
+                    <option value="australia">Australia</option>
+                    <option value="brazil">Brazil</option>
+                    <option value="usa">United States</option>
+                  </select>
+                </div>
+              </div>
+              <div class="column">
+                <label class="input__label" for="postal_code"
+                  >Postal code</label
+                >
+                <div class="input__wrapper_text -post_code">
+                  <input
+                    class="input__text"
+                    type="number"
+                    name="postcode"
+                    id="postal_code"
+                    placeholder="Your postal code..."
+                  />
+                </div>
+              </div>
+            </div>
+            <label class="input__label remember_next_time">
               <input
                 type="checkbox"
                 name="remember_next_time"
@@ -103,25 +145,25 @@
           <strong>Vintage Backbag</strong>
           <p class="price">$54.99</p>
           <p class="price-total">$94.99</p>
-          <input type="number" name="quantity" value="1" />
-        </div>
+          <div><input type="number" name="quantity" value="1" /></div>
 
-        <div class="bag_item">
-          <img src="./src/assets/images/photo2.png" alt="levi shoes" />
-          <strong>Levi Shoes</strong>
-          <p class="price">$74.99</p>
-          <p class="price-total">$94.99</p>
-          <input type="number" name="quantity" value="1" />
-        </div>
+          <div class="bag_item">
+            <img src="./src/assets/images/photo2.png" alt="levi shoes" />
+            <strong>Levi Shoes</strong>
+            <p class="price">$74.99</p>
+            <p class="price-total">$94.99</p>
+            <div><input type="number" name="quantity" value="1" /></div>
+          </div>
 
-        <div>
-          <p>Shipping</p>
-          <p>$19</p>
-        </div>
+          <div>
+            <p>Shipping</p>
+            <p>$19</p>
+          </div>
 
-        <div>
-          <p>Total</p>
-          <p>$148.98</p>
+          <div>
+            <p>Total</p>
+            <p>$148.98</p>
+          </div>
         </div>
       </article>
     </main>

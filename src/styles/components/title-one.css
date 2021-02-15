@@ -1,7 +1,6 @@
 .title__one {
   color: var(--gray-1);
   font-size: var(--title-md);
-  font-weight: 600;
 }
 
 @media (min-width: 768px) {

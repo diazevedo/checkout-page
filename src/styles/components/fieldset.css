@@ -1,0 +1,10 @@
+.fieldset__title {
+  font-size: var(--text-md);
+  color: var(--gray-2);
+}
+
+@media (min-width: 768px) {
+  .fieldset__title {
+    font-size: var(--text-lg);
+  }
+}

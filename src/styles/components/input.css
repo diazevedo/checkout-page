@@ -1,0 +1,121 @@
+.input__label {
+  color: var(--gray-3);
+  display: block;
+  font-size: var(--text-xs);
+  margin-bottom: 0.5rem;
+}
+
+.input__text {
+  width: 100%;
+  border: none;
+  padding-left: 2.4rem;
+}
+
+.input__text::placeholder {
+  color: var(--gray-4);
+}
+
+.input__wrapper_text {
+  border: 1px solid var(--gray-4);
+  font-size: var(--text-sm);
+  border-radius: var(--border-radius-default);
+  padding: 1.2rem;
+  height: 4.1rem;
+  position: relative;
+}
+
+.input__wrapper_text:before {
+  content: "";
+  width: 1.8rem;
+  height: 1.8rem;
+
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.input__wrapper_text.-email:before {
+  background-image: url(../../assets/images/email.svg);
+}
+
+.input__wrapper_text.-phone:before {
+  background-image: url(../../assets/images/call.svg);
+}
+
+.input__wrapper_text.-account:before {
+  background-image: url(../../assets/images/account_circle.svg);
+}
+
+.input__wrapper_text.-address:before {
+  background-image: url(../../assets/images/home.svg);
+}
+
+.input__wrapper_text.-location:before {
+  background-image: url(../../assets/images/location.svg);
+}
+
+.input__wrapper_text.-post_code:before {
+  background-image: url(../../assets/images/postal.svg);
+}
+
+/* it will be moved to parts => form*/
+.input__label:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+.input__wrapper_text.-country:after {
+  content: "";
+  width: 1.8rem;
+  height: 1.8rem;
+
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 1.2rem;
+  background-color: #e0e0e0;
+  border-radius: var(--border-radius-icon);
+
+  transform: translateY(-50%);
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url(../../assets/images/arrow-down.svg);
+}
+
+.select {
+  appearance: none;
+}
+
+.select:required:invalid {
+  color: var(--gray-4);
+}
+
+option {
+  color: var(--gray-2);
+}
+
+.row {
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+.column {
+  flex: 1;
+}
+
+.column:first-child {
+  margin-right: 2.4rem;
+}
+
+.remember_next_time {
+  display: flex;
+  align-items: center;
+}
+
+.remember_next_time input {
+  margin-right: 0.5rem;
+}
