@@ -13,6 +13,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   height: auto;
   padding: var(--space-sm) var(--space-xs);
+  font-family: var(--font-primary);
 }
 
 body > * {
