@@ -30,7 +30,7 @@
   <body>
     <main>
       <h1 class="title__one">Checkout</h1>
-      <div class="form-wrapper">
+      <section class="form-wrapper">
         <form>
           <fieldset class="fieldset">
             <legend class="fieldset__title">Contact information</legend>
@@ -139,33 +139,57 @@
             <button class="btn-submit" type="submit">Continue</button>
           </div>
         </form>
-      </div>
+      </section>
 
       <article>
         <div class="bag_item">
-          <img src="./src/assets/images/photo1.png" alt="bag" />
-          <strong>Vintage Backbag</strong>
-          <p class="price">$54.99</p>
-          <p class="price-total">$94.99</p>
-          <div><input type="number" name="quantity" value="1" /></div>
-
-          <div class="bag_item">
-            <img src="./src/assets/images/photo2.png" alt="levi shoes" />
-            <strong>Levi Shoes</strong>
-            <p class="price">$74.99</p>
-            <p class="price-total">$94.99</p>
-            <div><input type="number" name="quantity" value="1" /></div>
+          <img
+            class="bag_item__image"
+            src="./src/assets/images/photo1.png"
+            alt="bag"
+          />
+          <div class="bag_item__details">
+            <div class="bag_item__info">
+              <p class="bag_item__name"><strong>Vintage Backbag</strong></p>
+              <p class="bag_item__price">$54.99</p>
+              <p class="bag_item__total">$94.99</p>
+            </div>
+            <div class="bag_item__quantity-wrapper">
+              <button class="icon-button remove">remove</button>
+              <input type="number" name="quantity" value="1" />
+              <button class="icon-button add">add</button>
+            </div>
           </div>
+        </div>
+        <div class="bag_item">
+          <img
+            class="bag_item__image"
+            src="./src/assets/images/photo2.png"
+            alt="levi shoes"
+          />
+          <div class="bag_item__details">
+            <div class="bag_item__info">
+              <p class="bag_item__name"><strong>Levi Shoes</strong></p>
+              <p class="bag_item__price">$74.99</p>
 
-          <div>
-            <p>Shipping</p>
-            <p>$19</p>
+              <p class="bag_item__total">$124.99</p>
+            </div>
+            <div class="bag_item__quantity-wrapper">
+              <button class="icon-button remove">remove</button>
+              <input type="number" name="quantity" value="1" />
+              <button class="icon-button add">add</button>
+            </div>
           </div>
+        </div>
 
-          <div>
-            <p>Total</p>
-            <p>$148.98</p>
-          </div>
+        <div class="checkout_details">
+          <p class="checkout_details__text">Shipping</p>
+          <p class="checkout_details__text">$19</p>
+        </div>
+
+        <div class="checkout_details">
+          <p class="checkout_details__text">Total</p>
+          <p class="checkout_details__text">$148.98</p>
         </div>
       </article>
     </main>
