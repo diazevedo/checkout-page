@@ -30,168 +30,172 @@
   <body>
     <main>
       <h1 class="title__one">Checkout</h1>
-      <section class="form-wrapper">
-        <form>
-          <fieldset class="fieldset">
-            <legend class="fieldset__title">Contact information</legend>
+      <div class="content">
+        <section class="form-wrapper">
+          <form class="form-customer-details">
+            <fieldset class="fieldset">
+              <legend class="fieldset__title">Contact information</legend>
 
-            <label class="input__label" for="email">E-mail</label>
-            <div class="input__wrapper_text -email">
-              <input
-                class="input__text"
-                type="text"
-                name="email"
-                id="email"
-                placeholder="Enter your email..."
-              />
-            </div>
+              <label class="input__label" for="email">E-mail</label>
+              <div class="input__wrapper_text -email">
+                <input
+                  class="input__text"
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email..."
+                />
+              </div>
 
-            <label class="input__label" for="phone">Phone</label>
-            <div class="input__wrapper_text -phone">
-              <input
-                class="input__text"
-                type="text"
-                name="phone"
-                id="phone"
-                placeholder="Enter your phone..."
-              />
-            </div>
-          </fieldset>
+              <label class="input__label" for="phone">Phone</label>
+              <div class="input__wrapper_text -phone">
+                <input
+                  class="input__text"
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  placeholder="Enter your phone..."
+                />
+              </div>
+            </fieldset>
 
-          <fieldset class="fieldset">
-            <legend class="fieldset__title">Shipping address</legend>
+            <fieldset class="fieldset">
+              <legend class="fieldset__title">Shipping address</legend>
 
-            <label for="name" class="input__label">Full name</label>
-            <div class="input__wrapper_text -account">
-              <input
-                class="input__text"
-                type="text"
-                name="name"
-                id="name"
-                value="Rodney Cotton"
-              />
-            </div>
+              <label for="name" class="input__label">Full name</label>
+              <div class="input__wrapper_text -account">
+                <input
+                  class="input__text"
+                  type="text"
+                  name="name"
+                  id="name"
+                  value="Rodney Cotton"
+                />
+              </div>
 
-            <label class="input__label" for="address">Address</label>
-            <div class="input__wrapper_text -address">
-              <input
-                class="input__text"
-                type="text"
-                name="address"
-                id="address"
-                placeholder="Your address..."
-              />
-            </div>
+              <label class="input__label" for="address">Address</label>
+              <div class="input__wrapper_text -address">
+                <input
+                  class="input__text"
+                  type="text"
+                  name="address"
+                  id="address"
+                  placeholder="Your address..."
+                />
+              </div>
 
-            <label class="input__label" for="city">City</label>
-            <div class="input__wrapper_text -location">
-              <input
-                class="input__text"
-                type="text"
-                name="city"
-                id="city"
-                placeholder="Your city..."
-              />
-            </div>
+              <label class="input__label" for="city">City</label>
+              <div class="input__wrapper_text -location">
+                <input
+                  class="input__text"
+                  type="text"
+                  name="city"
+                  id="city"
+                  placeholder="Your city..."
+                />
+              </div>
 
-            <div class="row">
-              <div class="column">
-                <label class="input__label" for="country">Country</label>
-                <!-- probably it will become a list  -->
-                <div class="input__wrapper_text -country">
-                  <select
-                    required
-                    class="input__text -location select"
-                    name="country"
-                    id="country"
+              <div class="row">
+                <div class="column">
+                  <label class="input__label" for="country">Country</label>
+                  <!-- probably it will become a list  -->
+                  <div class="input__wrapper_text -country">
+                    <select
+                      required
+                      class="input__text -location select"
+                      name="country"
+                      id="country"
+                    >
+                      <option value="" disabled selected>
+                        Your country...
+                      </option>
+                      <option value="australia">Australia</option>
+                      <option value="brazil">Brazil</option>
+                      <option value="usa">United States</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="column">
+                  <label class="input__label" for="postal_code"
+                    >Postal code</label
                   >
-                    <option value="" disabled selected>Your country...</option>
-                    <option value="australia">Australia</option>
-                    <option value="brazil">Brazil</option>
-                    <option value="usa">United States</option>
-                  </select>
+                  <div class="input__wrapper_text -post_code">
+                    <input
+                      class="input__text"
+                      type="number"
+                      name="postcode"
+                      id="postal_code"
+                      placeholder="Your postal code..."
+                    />
+                  </div>
                 </div>
               </div>
-              <div class="column">
-                <label class="input__label" for="postal_code"
-                  >Postal code</label
-                >
-                <div class="input__wrapper_text -post_code">
-                  <input
-                    class="input__text"
-                    type="number"
-                    name="postcode"
-                    id="postal_code"
-                    placeholder="Your postal code..."
-                  />
-                </div>
+              <label class="input__label remember_next_time">
+                <input
+                  type="checkbox"
+                  name="remember_next_time"
+                  id="remember"
+                />Save this information for next time
+              </label>
+            </fieldset>
+            <div class="button-wrapper">
+              <button class="btn-submit" type="submit">Continue</button>
+            </div>
+          </form>
+        </section>
+
+        <article class="bag">
+          <div class="bag_item">
+            <img
+              class="bag_item__image"
+              src="./src/assets/images/photo1.png"
+              alt="bag"
+            />
+            <div class="bag_item__details">
+              <div class="bag_item__info">
+                <p class="bag_item__name"><strong>Vintage Backbag</strong></p>
+                <p class="bag_item__price">$54.99</p>
+                <p class="bag_item__total">$94.99</p>
+              </div>
+              <div class="bag_item__quantity-wrapper">
+                <button class="icon-button remove">remove</button>
+                <input type="number" name="quantity" value="1" />
+                <button class="icon-button add">add</button>
               </div>
             </div>
-            <label class="input__label remember_next_time">
-              <input
-                type="checkbox"
-                name="remember_next_time"
-                id="remember"
-              />Save this information for next time
-            </label>
-          </fieldset>
-          <div class="button-wrapper">
-            <button class="btn-submit" type="submit">Continue</button>
           </div>
-        </form>
-      </section>
+          <div class="bag_item">
+            <img
+              class="bag_item__image"
+              src="./src/assets/images/photo2.png"
+              alt="levi shoes"
+            />
+            <div class="bag_item__details">
+              <div class="bag_item__info">
+                <p class="bag_item__name"><strong>Levi Shoes</strong></p>
+                <p class="bag_item__price">$74.99</p>
 
-      <article>
-        <div class="bag_item">
-          <img
-            class="bag_item__image"
-            src="./src/assets/images/photo1.png"
-            alt="bag"
-          />
-          <div class="bag_item__details">
-            <div class="bag_item__info">
-              <p class="bag_item__name"><strong>Vintage Backbag</strong></p>
-              <p class="bag_item__price">$54.99</p>
-              <p class="bag_item__total">$94.99</p>
-            </div>
-            <div class="bag_item__quantity-wrapper">
-              <button class="icon-button remove">remove</button>
-              <input type="number" name="quantity" value="1" />
-              <button class="icon-button add">add</button>
+                <p class="bag_item__total">$124.99</p>
+              </div>
+              <div class="bag_item__quantity-wrapper">
+                <button class="icon-button remove">remove</button>
+                <input type="number" name="quantity" value="1" />
+                <button class="icon-button add">add</button>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="bag_item">
-          <img
-            class="bag_item__image"
-            src="./src/assets/images/photo2.png"
-            alt="levi shoes"
-          />
-          <div class="bag_item__details">
-            <div class="bag_item__info">
-              <p class="bag_item__name"><strong>Levi Shoes</strong></p>
-              <p class="bag_item__price">$74.99</p>
 
-              <p class="bag_item__total">$124.99</p>
-            </div>
-            <div class="bag_item__quantity-wrapper">
-              <button class="icon-button remove">remove</button>
-              <input type="number" name="quantity" value="1" />
-              <button class="icon-button add">add</button>
-            </div>
+          <div class="checkout_details">
+            <p class="checkout_details__text -label">Shipping</p>
+            <p class="checkout_details__text">$19</p>
           </div>
-        </div>
 
-        <div class="checkout_details">
-          <p class="checkout_details__text">Shipping</p>
-          <p class="checkout_details__text">$19</p>
-        </div>
-
-        <div class="checkout_details">
-          <p class="checkout_details__text">Total</p>
-          <p class="checkout_details__text">$148.98</p>
-        </div>
-      </article>
+          <div class="checkout_details">
+            <p class="checkout_details__text -label">Total</p>
+            <p class="checkout_details__text">$148.98</p>
+          </div>
+        </article>
+      </div>
     </main>
   </body>
 </html>

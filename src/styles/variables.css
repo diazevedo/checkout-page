@@ -38,5 +38,6 @@
   --space-lxx: 8.6rem;
 
   --min-width: 37.5rem;
-  --max-width: 128.5rem;
+  --max-width: 96rem;
+  --max-width-mobile: 46rem;
 }

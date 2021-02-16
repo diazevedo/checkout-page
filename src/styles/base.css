@@ -36,6 +36,7 @@ input {
   font-family: inherit;
   text-decoration: none;
   outline: none;
+  border: none;
 }
 
 input {
@@ -50,7 +51,7 @@ button {
 
 @media (min-width: 920px) {
   body {
-    padding: var(--space-md);
+    padding: var(--space-md) var(--space-xs);
   }
 }
 

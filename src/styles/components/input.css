@@ -2,12 +2,11 @@
   color: var(--gray-3);
   display: block;
   font-size: var(--text-xs);
-  margin: 1rem 0 0.5rem;
+  margin: 1.2rem 0 0.5rem;
 }
 
 .input__text {
   width: 100%;
-  border: none;
   padding-left: 2.4rem;
 }
 

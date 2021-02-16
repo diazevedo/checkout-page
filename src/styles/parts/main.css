@@ -4,3 +4,34 @@
 @import "../components/input.css";
 @import "../components/button.css";
 @import "../components/bag_item.css";
+
+main {
+  max-width: var(--max-width-mobile);
+}
+
+.content {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.content .bag {
+  margin-top: var(--space-sm);
+}
+
+@media (min-width: 900px) {
+  main {
+    max-width: var(--max-width);
+  }
+
+  .content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 6.4rem;
+  }
+
+  .content .bag {
+    margin-top: 0;
+  }
+}
