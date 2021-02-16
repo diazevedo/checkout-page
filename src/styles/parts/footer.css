@@ -1,0 +1,13 @@
+.footer {
+  text-align: center;
+  margin-top: 9.5rem;
+  font-size: var(--text-md);
+}
+
+.footer__text {
+  color: var(--gray-6);
+}
+
+.link {
+  color: inherit;
+}
