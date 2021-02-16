@@ -11,3 +11,9 @@
 .link {
   color: inherit;
 }
+
+@media (min-width: 900px) {
+  .footer {
+    margin-top: 16rem;
+  }
+}
