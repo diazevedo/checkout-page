@@ -54,11 +54,16 @@
 .bag_item__quantity-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 12.3rem;
   height: 5rem;
   border-radius: var(--border-radius-default);
   border: var(--gray-4) 1px solid;
   padding: 1.6rem 1rem;
+}
+
+.input-quantity {
+  height: min-content;
 }
 
 .icon-button {
