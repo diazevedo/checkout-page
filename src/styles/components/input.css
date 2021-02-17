@@ -7,7 +7,7 @@
 
 .input__text {
   width: 100%;
-  padding-left: 2.4rem;
+  padding-left: 1.2rem;
 }
 
 .input__text::placeholder {
@@ -20,7 +20,9 @@
   border-radius: var(--border-radius-default);
   padding: 1.2rem;
   height: 4.1rem;
-  position: relative;
+  /* position: relative; */
+  display: flex;
+  align-items: center;
 }
 
 .input__wrapper_text:before {
@@ -29,9 +31,9 @@
   height: 1.8rem;
 
   display: block;
-  position: absolute;
+  /* position: absolute; */
   top: 50%;
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
 
   background-repeat: no-repeat;
   background-size: 100%;
@@ -71,13 +73,13 @@
   height: 1.8rem;
 
   display: block;
-  position: absolute;
-  top: 50%;
+  /* position: absolute; */
+  /* top: 50%; */
   right: 1.2rem;
   background-color: #e0e0e0;
   border-radius: var(--border-radius-icon);
 
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
 
   background-repeat: no-repeat;
   background-size: 100%;
@@ -138,7 +140,7 @@ option {
   }
 
   .input__text {
-    padding-left: 3.6rem;
+    /* padding-left: rem; */
   }
 
   .remember_next_time input {
