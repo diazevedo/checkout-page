@@ -73,17 +73,14 @@
   height: 1.8rem;
 
   display: block;
-  /* position: absolute; */
-  /* top: 50%; */
-  right: 1.2rem;
+
   background-color: #e0e0e0;
   border-radius: var(--border-radius-icon);
-
-  /* transform: translateY(-50%); */
 
   background-repeat: no-repeat;
   background-size: 100%;
   background-image: url(../../assets/images/arrow-down.svg);
+  background-position-y: center;
 }
 
 .select {
@@ -137,10 +134,6 @@ option {
   .input__wrapper_text:before {
     width: 2rem;
     height: 1.8rem;
-  }
-
-  .input__text {
-    /* padding-left: rem; */
   }
 
   .remember_next_time input {
