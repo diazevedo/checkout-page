@@ -145,3 +145,25 @@ option {
     margin-right: 1rem;
   }
 }
+
+.message {
+  flex: 1;
+  font-size: var(--text-md);
+  display: none;
+}
+
+.error-text {
+  color: #ff0000;
+}
+
+.success-text {
+  color: var(--orange-1);
+}
+
+.error {
+  border: 1px solid #ff0000;
+}
+
+.show {
+  display: block;
+}

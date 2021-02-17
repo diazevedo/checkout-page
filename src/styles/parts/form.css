@@ -14,6 +14,7 @@
 .form-customer-details .button-wrapper {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   margin-top: var(--space-xs);
 }
 
