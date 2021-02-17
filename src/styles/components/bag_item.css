@@ -74,6 +74,19 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
 }
 
+/* remove default arrows from browsers */
+/* Chrome, Safari, Edge, Opera */
+.bag_item__quantity-wrapper input::-webkit-outer-spin-button,
+.bag_item__quantity-wrapper input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.bag_item__quantity-wrapper input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .remove {
   background-image: url(../../assets/images/remove.svg);
 }
