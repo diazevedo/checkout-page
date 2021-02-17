@@ -62,7 +62,7 @@ button {
   cursor: pointer;
 }
 
-@media (min-width: 920px) {
+@media (min-width: 900px) {
   body {
     padding: var(--space-md) var(--space-xs);
   }
